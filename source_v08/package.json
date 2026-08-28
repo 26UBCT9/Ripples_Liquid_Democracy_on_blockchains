@@ -1,0 +1,25 @@
+{
+  "name": "liquid-vote",
+  "version": "0.8.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "HH_INTERVAL=5000 hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.6.1",
+    "hardhat": "^2.29.1",
+    "solc": "^0.8.24"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1",
+    "@semaphore-protocol/contracts": "^4.14.3",
+    "@semaphore-protocol/core": "^4.14.3",
+    "@semaphore-protocol/proof": "^4.14.3",
+    "@zk-kit/semaphore-artifacts": "^4.13.0"
+  }
+}
